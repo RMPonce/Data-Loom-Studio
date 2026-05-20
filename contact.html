@@ -1,0 +1,134 @@
+ 
+ <!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Data Loom Studio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>body { box-sizing: border-box; }</style>
+<script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+
+</head>
+ 
+<body class="h-full">
+<div id="app-wrapper" 
+
+	class="w-full h-full overflow-auto" 
+	style="background-color:#1f1f1f; color:#f1f1e0; position:relative;">
+	
+	<div style="
+  position:absolute;
+  inset:0;
+  background:url('IMG/wt.png') center/cover no-repeat;
+  opacity:0.05;
+  filter:grayscale(100%);
+  z-index:0;
+  pointer-events:none;
+"></div>
+	
+	<div class="bubbles">
+  <span>❤</span>
+  <span>★</span>
+  <span>✦</span>
+  <span>❤</span>
+  <span>★</span>
+  <span>✦</span>
+</div>
+<nav class="w-full flex items-center justify-between px-6 md:px-12 py-4 sticky top-0 z-50" 
+	style="background:rgba(31,31,31,0.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(229,209,9,0.15);">
+	
+	
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center">
+
+  <img src="IMG/DATA LOOM STUDIO LOGO(black) (2).png" 
+       alt="Logo"
+       style="width:55px; height:55px; object-fit:contain;" />
+
+</div>
+
+<span class="font-bebas text-2xl tracking-wider" 
+		style="color:#e5d109;" 
+		id="nav-brand">DATA LOOM STUDIO</span>
+</div>
+
+
+<div class="hidden md:flex items-center gap-8 font-poppins text-sm font-medium" 
+		style="color:#f1f1e0;">		
+		
+
+		<a href="index.html" class="hover:opacity-100 opacity-70 transition-opacity">Home</a> 
+		<a href="Services.html" class="hover:opacity-100 opacity-70 transition-opacity">Services</a> 
+		<a href="about.html" class="hover:opacity-100 opacity-70 transition-opacity">About</a> 
+		<a href="contact.html" class="hover:opacity-100 opacity-70 transition-opacity">Contact</a>
+		
+</div>
+<button id="mobile-menu-btn" 
+		class="md:hidden" 
+		style="color:#e5d109;" aria-label="Menu"> 
+		<i data-lucide="menu" style="width:28px;height:28px;"></i> </button>
+</nav>
+
+
+   <div id="mobile-menu" 
+   class="hidden fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 font-poppins text-xl font-medium" 
+   style="background:rgba(31,31,31,0.98); color:#f1f1e0;">
+   <button id="mobile-close" 
+   class="absolute top-5 right-6" 
+   style="color:#e5d109;" aria-label="Close menu">
+   <a href="Services.html" class="mobile-link" onclick="closeMobile()">Services</a> 
+   <a href="about.html" class="mobile-link" onclick="closeMobile()">About</a> 
+   <a href="contact.html" class="mobile-link" onclick="closeMobile()">Contact</a>
+   
+   </div>
+<body>
+
+
+<header class="w-full relative overflow-hidden" style="min-height:70%;">
+    <div class="absolute top-12 right-8 w-64 h-64 rounded-full opacity-10" 
+	style="background:radial-gradient(circle, #e5d109 0%, transparent 70%);"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 rounded-full opacity-10" 
+	style="background:radial-gradient(circle, #002366 0%, transparent 70%);"></div>
+<div class="max-w-6xl mx-auto px-6 md:px-12 py-20 md:py-32 flex flex-col justify-center relative z-10"
+	style="min-height:70%;">
+     
+	 
+     <h1 id="hero-title" 
+	 class="font-bebas text-6xl md:text-8xl lg:text-7xl leading-none tracking-wide anim-fade-up delay-1" 
+	 style="color:#e5d109;">START YOUR DIGITAL JOURNEY</h1>   
+ 
+ 
+ 
+<p id="hero-subtitle" class="font-merriweather text-lg md:text-xl mt-6 max-w-2xl leading-relaxed anim-fade-up delay-2" 
+style="color:#f1f1e0; opacity:0.8;">Join Data Loom Studio and start building smarter systems, creative workflows, and modern digital skills.</p>
+
+
+
+
+	 <div class="mt-10 flex flex-wrap gap-4 anim-fade-up delay-3">
+
+  <a href="https://gmail.us15.list-manage.com/subscribe?u=3e83adc955f7b28a6e8200c62&id=f7f532ff17"
+     target="_blank"
+     class="cta-btn font-poppins font-semibold px-8 py-4 rounded-lg text-sm inline-block text-center"
+     style="background:#e5d109; color:#1f1f1f;">
+     
+     Let's Work Together
+     
+  </a>
+
+</div>
+</div>
+     <p id="form-msg" class="font-poppins text-sm hidden" style="color:#e5d109;"></p>
+    </div>
+   </section>
+  </div>
+  
+   </body>
+   </html>

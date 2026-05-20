@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Sample Projects | Data Loom Studio</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background:#171717;
+color:#f1f1e0;
+overflow-x:hidden;
+}
+
+/* Watermark */
+.bg-watermark{
+position:fixed;
+inset:0;
+display:flex;
+align-items:center;
+justify-content:center;
+pointer-events:none;
+opacity:0.03;
+z-index:0;
+}
+
+.bg-watermark img{
+width:500px;
+max-width:80%;
+filter:grayscale(100%);
+}
+
+/* Back Button */
+.back-button{
+background:rgba(31,31,31,0.9);
+border:1px solid rgba(229,209,9,0.2);
+backdrop-filter:blur(10px);
+color:#e5d109;
+transition:0.3s ease;
+}
+
+.back-button:hover{
+transform:translateY(-2px);
+border:1px solid rgba(229,209,9,0.4);
+}
+
+/* Project Cards */
+.project-card{
+background:#1f1f1f;
+border:1px solid rgba(229,209,9,0.15);
+backdrop-filter:blur(12px);
+transition:0.35s ease;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.35);
+border:1px solid rgba(229,209,9,0.35);
+}
+
+/* Gold Text */
+.gold-text{
+color:#e5d109;
+}
+
+/* Slide Buttons */
+.slide-btn{
+background:rgba(0,0,0,0.45);
+border:1px solid rgba(229,209,9,0.2);
+color:#e5d109;
+backdrop-filter:blur(10px);
+transition:0.3s ease;
+}
+
+.slide-btn:hover{
+background:#e5d109;
+color:#111;
+}
+
+</style>
+
+</head>
+
+<body class="h-full overflow-auto">
+
+<!-- WATERMARK -->
+<div class="bg-watermark">
+<img src="IMG/DATA LOOM STUDIO LOGO(black) (2).png" alt="Watermark Logo">
+</div>
+
+<!-- BACK BUTTON -->
+<div class="fixed top-6 left-6 z-50">
+
+<a href="founder.html"
+class="back-button flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium">
+
+← Back
+
+</a>
+
+</div>
+
+<!-- INTRO SECTION -->
+<section id="sample-intro"
+class="min-h-screen flex items-center px-6 relative z-10">
+
+<div class="max-w-4xl mx-auto text-center">
+
+<h1 class="text-5xl md:text-6xl font-bold mb-8 gold-text">
+My Work Samples
+</h1>
+
+<p class="text-gray-300 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+These are some of my HTML projects I’ve created as a hobby.
+Scroll down to explore my sample works, layouts, and design projects.
+</p>
+
+</div>
+
+</section>
+
+<!-- PROJECT 1 -->
+<section id="project1"
+class="min-h-screen px-6 py-10 relative z-10">
+
+<div class="max-w-6xl mx-auto flex flex-col gap-8 project-card rounded-3xl p-8">
+
+<div class="w-full text-center">
+
+<h3 class="text-2xl font-bold gold-text">
+E-commerce Website Development
+</h3>
+
+</div>
+
+<div class="flex flex-col md:flex-row items-center gap-8">
+
+<!-- SLIDESHOW -->
+<div class="relative w-full md:w-3/4" data-slideshow>
+
+<img src="IMG/checkout.PNG" class="slide active w-full h-96 rounded-2xl object-cover">
+<img src="IMG/gagmainmenu.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+<img src="IMG/gagmutation.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+<img src="IMG/gagpets.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+<img src="IMG/gagplants.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+<img src="IMG/gagsecondpage.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+<img src="IMG/GAGHTML.PNG" class="slide w-full h-96 rounded-2xl object-cover">
+
+<button class="prev slide-btn absolute top-1/2 left-4 -translate-y-1/2 px-4 py-2 rounded-full">
+❮
+</button>
+
+<button class="next slide-btn absolute top-1/2 right-4 -translate-y-1/2 px-4 py-2 rounded-full">
+❯
+</button>
+
+</div>
+
+<!-- DESCRIPTION -->
+<div class="md:w-1/4">
+
+<p class="text-gray-400 text-lg leading-relaxed">
+
+This project is an e-commerce website I developed,
+featuring product listings, navigation systems,
+and structured layouts. It demonstrates my ability
+to design and organize online store interfaces using HTML.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT 2 -->
+<section id="project2"
+class="min-h-screen px-6 py-10 relative z-10">
+
+<div class="max-w-6xl mx-auto flex flex-col gap-8 project-card rounded-3xl p-8">
+
+<div class="w-full text-center">
+
+<h3 class="text-2xl font-bold gold-text">
+Content Editing & Puzzle Design
+</h3>
+
+</div>
+
+<div class="flex flex-col md:flex-row items-center gap-8">
+
+<!-- SLIDESHOW -->
+<div class="relative w-full md:w-3/4 overflow-hidden"
+data-slideshow
+style="height:400px;">
+
+<img src="IMG/animalone.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/humanmain.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/humanone.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/plantmain.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/plantone.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/weathermain.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/weatherone.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/solarmain.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/solarone.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/SPS.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/canva2.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/WORD.PNG" class="slide w-full h-full object-contain rounded-2xl">
+
+<button class="prev slide-btn absolute left-4 top-1/2 -translate-y-1/2 px-4 py-2 rounded-full">
+❮
+</button>
+
+<button class="next slide-btn absolute right-4 top-1/2 -translate-y-1/2 px-4 py-2 rounded-full">
+❯
+</button>
+
+</div>
+
+<!-- DESCRIPTION -->
+<div class="md:w-1/4">
+
+<p class="text-gray-400 text-lg leading-relaxed">
+
+This project showcases crossword puzzle creation,
+content editing, and layout organization.
+It highlights my attention to detail,
+clarity in structure, and creative content presentation.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT 3 -->
+<section id="project3"
+class="min-h-screen px-6 py-10 relative z-10">
+
+<div class="max-w-6xl mx-auto flex flex-col gap-8 project-card rounded-3xl p-8">
+
+<div class="w-full text-center">
+
+<h3 class="text-2xl font-bold gold-text">
+Mountain Province Feature Website
+</h3>
+
+</div>
+
+<div class="flex flex-col md:flex-row items-center gap-8">
+
+<!-- SLIDESHOW -->
+<div class="relative w-full md:w-3/4 overflow-hidden"
+data-slideshow
+style="height:400px;">
+
+<img src="IMG/mthome.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/mttour.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/mtmap.PNG" class="slide w-full h-full object-contain rounded-2xl">
+<img src="IMG/mtad.PNG" class="slide w-full h-full object-contain rounded-2xl">
+
+<button class="prev slide-btn absolute left-4 top-1/2 -translate-y-1/2 px-4 py-2 rounded-full">
+❮
+</button>
+
+<button class="next slide-btn absolute right-4 top-1/2 -translate-y-1/2 px-4 py-2 rounded-full">
+❯
+</button>
+
+</div>
+
+<!-- DESCRIPTION -->
+<div class="md:w-1/4">
+
+<p class="text-gray-400 text-lg leading-relaxed">
+
+This static website was developed during my college years using HTML.
+It features information about Mountain Province,
+including tourist spots, culture, and traditions.
+The project focused on layout structure and content presentation.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Prevent Ctrl Scroll Zoom -->
+<script>
+
+document.addEventListener('wheel', function(e){
+
+if(e.ctrlKey){
+e.preventDefault();
+}
+
+}, { passive:false });
+
+</script>
+
+<!-- SLIDESHOW SCRIPT -->
+<script>
+
+document.querySelectorAll('[data-slideshow]').forEach(slideshow => {
+
+const slides = slideshow.querySelectorAll('.slide');
+const nextBtn = slideshow.querySelector('.next');
+const prevBtn = slideshow.querySelector('.prev');
+
+let current = 0;
+
+function showSlide(index){
+
+slides.forEach(slide => slide.style.display = 'none');
+slides[index].style.display = 'block';
+
+}
+
+showSlide(current);
+
+nextBtn.addEventListener('click', () => {
+
+current = (current + 1) % slides.length;
+showSlide(current);
+
+});
+
+prevBtn.addEventListener('click', () => {
+
+current = (current - 1 + slides.length) % slides.length;
+showSlide(current);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

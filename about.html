@@ -136,5 +136,53 @@ It was founded with the goal of helping individuals and businesses simplify thei
  
  
    
+	<script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<script>
+  lucide.createIcons();
+</script>
+
+<script>
+const mobileBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileClose = document.getElementById("mobile-close");
+
+mobileBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+});
+
+mobileClose.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
+});
+
+function closeMobile() {
+  mobileMenu.classList.add("hidden");
+}
+</script>
+</div>
+
+<script>
+// Disable Ctrl + zoom (desktop)
+document.addEventListener('wheel', function (e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// Disable Ctrl + / Ctrl - / Ctrl 0
+document.addEventListener('keydown', function (e) {
+  if ((e.ctrlKey || e.metaKey) &&
+     (e.key === '+' || e.key === '-' || e.key === '0')) {
+    e.preventDefault();
+  }
+});
+
+// Disable pinch zoom (mobile)
+document.addEventListener('touchmove', function (e) {
+  if (e.scale !== 1) {
+    e.preventDefault();
+  }
+}, { passive: false });
+</script>
    </body>
    </html>

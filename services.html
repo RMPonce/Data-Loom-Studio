@@ -11,15 +11,27 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>body { box-sizing: border-box; }</style>
-<script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+<style>
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+</style><script src="/_sdk/data_sdk.js" type="text/javascript"></script>
 
 </head>
  
-<body class="h-full overflow-x-hidden">
+<body class="min-h-screen overflow-x-hidden">
+
 <div id="app-wrapper" 
 
-	class="w-full h-full overflow-auto" 
+	class="w-full min-h-screen overflow-x-hidden" 
 	style="background-color:#1f1f1f; color:#f1f1e0; position:relative;">
 	
 	<div style="
@@ -138,7 +150,6 @@ style="color:#f1f1e0; opacity:0.8;">We provide digital support, organization, an
    View Services
 </a>
  
-</nav>
 
 
 

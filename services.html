@@ -329,12 +329,6 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-// Disable pinch zoom (mobile)
-document.addEventListener('touchmove', function (e) {
-  if (e.scale !== 1) {
-    e.preventDefault();
-  }
-}, { passive: false });
 </script>
 </body>
 </html>
